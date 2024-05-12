@@ -179,6 +179,14 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
+const convertTemperature = (temperature, scale) => {
+    const cTemp = celcius;
+    const fTemp = fahrenheit;
+    
+    const cToF = (cTemp * 9/5) + 32;
+    const fToC = (fTemp - 32) * 5/9 ;
+    return   
+}
 
 
 //console.log('Exercise 10 Result:', convertTemperature(32, "C"));
