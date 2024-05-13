@@ -48,11 +48,18 @@ Complete the exercise in the space below:
 */
 
 const isCharAVowel = (char) => {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    if(char = vowels) {
+    if(char === 'a') {
         return 'True'
+    } else if (char === 'e') {
+        return 'True'
+    } else if (char === 'i') {
+        return 'True'
+    } else if (char === 'o') {
+        return 'True'
+    } else if (char === 'u') {
+        return "true"
     } else {
-        return 'False'
+        return 'Flase'
     }
 }
 
@@ -107,7 +114,7 @@ Complete the exercise in the space below:
 */
 
 const reverseString = (str) => {
-    return str.split('').reverse().join(''); // found this line to reverse a string on freecodecamp.com 
+    return str.split('').reverse().join(''); // found this line to reverse a string on freecodecamp.com. split():divides the string into an arrat of characters. reverse() reverses that array. join() puts it back together. 
 }
 
 
@@ -202,9 +209,20 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
+const basicCalculator = (num1, num2, operation) => {
+    if (operation === 'add') {
+        return num1 + num2;
+    } else if (operation === 'subtract') {
+        return num1 - num2; 
+    } else if (operation === 'multiply') {
+        return num1 * num2;
+    } else if (operation === 'divide') {
+        return num1 / num2;
+    }
+}
 
 
-//console.log('Exercise 11 Result:', basicCalculator(10, 5, "subtract"));
+console.log('Exercise 11 Result:', basicCalculator(10, 5, "subtract"));
 
 /*
 Exercise 12: calculateGrade()
@@ -216,9 +234,20 @@ Example: calculateGrade(100) should return A.
 Complete the exercise in the space below:
 */
 
+const calculateGrade = (score) => {
+    if (score >= 90) {
+        return 'A';
+    } else if (score >= 80) {
+        return 'B';
+    } else if (score >= 70) {
+        return 'C';
+    } else if (score >=60) {
+        return 'D';
+    } else if (score <=59) 
+        return 'F';
+}
 
-
-//console.log('Exercise 12 Result:', calculateGrade(85));
+console.log('Exercise 12 Result:', calculateGrade(45));
 
 /*
 Exercise 13: createUsername()
@@ -260,5 +289,3 @@ Complete the exercise in the space below:
 
 
 //console.log('Exercise 14 Result:', numArgs(1, 2, 3, 4));
-
-
