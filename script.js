@@ -164,9 +164,12 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 
+const calculateTip = (billAmount, tipPercent) => {
+    const totalTip = billAmount * (tipPercent / 100);
+    return totalTip;
+}
 
-
-//console.log('Exercise 9 Result:', calculateTip(50, 20));
+console.log('Exercise 9 Result:', 'Total tip is $', calculateTip(50, 20));
 
 /*
 Exercise 10: convertTemperature()
@@ -180,16 +183,14 @@ Complete the exercise in the space below:
 */
 
 const convertTemperature = (temperature, scale) => {
-    const cTemp = celcius;
-    const fTemp = fahrenheit;
-    
-    const cToF = (cTemp * 9/5) + 32;
-    const fToC = (fTemp - 32) * 5/9 ;
-    return   
+    if (scale === 'C') {
+        return (temperature * 9/5) + 32; // found conversion formula by googling
+    } else if (scale === 'F') {
+        return (temperature - 32) * 5/9;
+    }  
 }
 
-
-//console.log('Exercise 10 Result:', convertTemperature(32, "C"));
+console.log('Exercise 10 Result:', convertTemperature(32, 'F'));
 
 /*
 Exercise 11: basicCalculator()
